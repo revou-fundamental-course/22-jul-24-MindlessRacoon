@@ -1,0 +1,72 @@
+nav{
+    display: flex;
+    border-bottom: 5px #e1e1e1 solid;
+    justify-content: space-between;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+
+.nav-container {
+    border: 1px solid;
+    display: flex;
+    margin-right: 90px;
+    align-items: center;
+}
+
+.logo{
+    align-content: center;
+}
+
+.logo-container{
+    margin-left: 90px;
+    font-family: "Playwrite AR", cursive;
+    font-size: 19px;
+}
+
+.logo-icon{
+    height: 30px;
+    width: 50px;
+}
+
+.items-nav{
+    margin: 0px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 22px;
+    padding-left: 22px;
+    color: black;
+}
+
+p, h1, h2, h3, h4, a{
+    font-family: "Rubik", sans-serif;
+}
+
+.items-nav{
+    --c:  #022831; /* the color*/
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+    text-decoration: none;
+    color: black;
+}
+.items-nav:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+    text-decoration: none;
+    color: #fff;
+}
+
+.items-nav:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+    text-decoration: none;
+}
